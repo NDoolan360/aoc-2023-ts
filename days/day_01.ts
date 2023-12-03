@@ -1,4 +1,4 @@
-function solve(input: string): [string, string] {
+function solve_01(input: string): [string, string] {
     const solution1: number = input
         .split('\n')
         .map(firstLastDigitConcat)
@@ -36,5 +36,5 @@ function firstLastDigitConcat(inString: string): number {
 // cat input/2023_day_1_input.txt | bun ./src/years/year_2023/day_01.ts
 process.stdin.setEncoding('utf-8');
 process.stdin.on('data', (input: string) => {
-    console.log(solve(input));
+    console.log(solve_01(input));
 });
